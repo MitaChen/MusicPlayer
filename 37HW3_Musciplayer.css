@@ -1,0 +1,170 @@
+﻿
+
+@font-face {
+    font-family: 'webdings';
+    src: url('fonts/webdings.eot') format('embedded-opentype');
+}
+@font-face {
+    font-family: 'webdings';
+    src: url('fonts/webdings.svg') format('svg');
+}
+@font-face {
+    font-family: 'webdings';
+    src: url('fonts/webdings.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'webdings';
+    src: url('fonts/webdings.woff') format('woff');
+}
+@font-face {
+    font-family: 'webdings';
+    src: url('fonts/webdings.woff2') format('woff2');
+}
+
+body {
+    font-family: Consolas;
+    color: white;
+}
+
+#ControlPanel {
+    border: 0px solid grey;
+    padding-top: 30px;
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    text-align: center;
+    background-color: #678f8d;
+    border-radius: 0%;
+}
+
+    #ControlPanel span {
+        font-family: Webdings;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 5px;
+        background-color: #466565;
+        color: #A5C2AD;
+    }
+
+hr {
+    color: #678f8d;
+    border: 5px solid #678f8d;
+    width: 50%;
+}
+
+#song {
+    width: 50%;
+    padding: 6px;
+    background-color: #fffdcf;
+    color: #494949;
+    font-family: Consolas;
+    font-size: 14px;
+    border: 0px;
+}
+
+#info2 {
+    padding: 5px;
+}
+
+.btnVol {
+    border-radius: 50%;
+    border: 0px;
+    font-family: Consolas;
+    font-size: 16px;
+    font-weight: normal;
+    background-color: #466565;
+    color: #A5C2AD;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+#volInfo {
+    padding: 3px;
+    width: 25px;
+    text-align: center;
+    font-family: Consolas;
+    background-color: #466565;
+    color: #A5C2AD;
+    border: 0px;
+}
+
+#volValue {
+    width: 40%;
+    height: 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0px;
+    background-color: #466565;
+    outline: none;
+}
+
+    #volValue::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 10px;
+        height: 8px;
+        border: 4px solid #fffdcf;
+    }
+
+#progress {
+    margin-top: 30px;
+    width: 100%;
+    height: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fffdcf;
+}
+
+    #progress::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 10px;
+        height: 5px;
+        background-color: #466565;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+        #progress::-webkit-slider-thumb:hover {
+            width: 20px;
+            height: 20px;
+            background-color: #fffdcf;
+            border: 4px solid #fffdcf;
+            border-radius: 50%;
+        }
+
+#book > div {
+    background-color: #678f8d;
+    border: 1px solid #678f8d;
+    width: 298px;
+    height: 230px;
+    float: left;
+}
+
+    #book > div > div {
+        background-color: #fffdcf;
+        border-bottom: 1px dashed #aaa;
+        padding: 3px;
+        color: #494949;
+    }
+
+#book > button {
+    clear: both;
+    padding: 8px;
+    background-color: #466565;
+    color: #A5C2AD;
+    border: 0px;
+    width: 100%;
+    font-size:16px;
+    font-weight:bold;
+}
+
+#head {
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: #A5C2AD;
+}
+
+.hide {
+    display: none;
+}

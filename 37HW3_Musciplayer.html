@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>:: Music Player ::</title>
+    <link href="37HW3_Musciplayer.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="head">- music player -</div>
+    <div id="ControlPanel">
+        <select id="song">
+        </select>
+
+        <hr />
+
+        <span onclick="Play()" id="btnPlay" title="播放">4</span>
+        <span onclick="Stop()" title="暫停"><</span>
+        <!--<span onclick="Pause()"> ; </span>-->
+        <span onclick="changeSong(-1)" title="上一首">9</span>
+        <span onclick="changeTime(-3)" title="倒轉">7</span>
+        <span onclick="changeTime(3)" title="快轉">8</span>
+        <span onclick="changeSong(1)" title="下一首">:</span>
+        <span onclick="setMuted()" title="靜音">x</span>
+        <span onclick="setLoop()" title="單曲循環">q</span>
+        <span onclick="setRandom()" title="隨機播放">s</span>
+        <span onclick="setAllLoop()" title="全曲循環">`</span>
+        <span onclick="songBook()" title="歌單功能">@</span>
+        <input id="progress" type="range" value="0" oninput="setTimeBar()" />
+        <hr />
+        <input id="volValue" type="range" max="100" min="0" value="60" oninput="setVolume()" />
+        <!--onchange:拖曳過程要放掉才會改變值呼叫動作-->
+        <input id="Button1" class="btnVol" type="button" value="-" onclick="changeVolume(-1)" />
+        <input id="Button2" class="btnVol" type="button" value="+" onclick="changeVolume(1)" />
+        <input id="volInfo" type="text" readonly />
+        <hr />
+        <div id="info">
+            <marquee>♫ 請按下播放鈕 ♫ 右上角有歌單功能按鈕，可設定自己的歌單 ※</marquee>
+            <div>00:00 / 00:00</div>
+            <div id="info2">目前播放狀態 ♬ </div>
+            <div>　</div>
+            <div>　</div>
+        </div>
+
+        <div id="book" class="hide">
+            <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div title="music/IU_Celebrity.mp3">IU-Celebrity</div>
+                <div title="music/PSY_Celeb.mp3">PSY-Celeb</div>
+                <div title="music/JOY_Hello.mp3">JOY-Hello</div>
+                <div title="music/CHO_JUNG_SEOK_I_Like_You.mp3">CHO JUNG SEOK-I Like You</div>
+                <div title="music/JOY_Yeowooya.mp3">JOY-Yeowooya</div>
+                <div title="music/Kyung_Park_Ordinary_Love.mp3">KYUNG PARK-Ordinary Love</div>
+            </div>
+            <div ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+            <button onclick="Update()">拖移左方歌曲至右方空白處，並按此更新歌單。</button>
+        </div>
+    </div>
+
+    <audio id="music">
+        <source type="audio/mpeg" />
+    </audio>
+
+    <script src="37HW3_Musicplayer.js"></script>
+
+</body>
+</html>
