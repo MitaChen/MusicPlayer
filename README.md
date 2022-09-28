@@ -18,3 +18,5 @@ This Music Player build with HTML/CSS/JavaScript.
 <br><br>
 2. 右上方的工具圖示為歌單功能，點選後下方會跑出歌單，可以將左邊的歌曲拖拉至右方，即可撥放自己喜歡的歌曲。<BR>
 ![image](https://user-images.githubusercontent.com/114054051/192694446-3131ca4d-8a3d-4b18-9752-68802389e88d.png)
+3. 中間的捲軸條，分別是播放進度與音量控制，可以左右拖曳，音量控制旁的加減號也可以變換音量。<BR>
+![image](https://user-images.githubusercontent.com/114054051/192762421-95776a3c-a16f-4a01-ae67-b8daf125abe8.png)
